@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Mumbai</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Hero Section */
+        .hero {
+            background-image: url('https://i.redd.it/b99en84uvy951.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            position: relative;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        .explore-section img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Welcome to Mumbai</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#introduction">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#info-section">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-white">
+        <div class="hero-text">
+            <h1>The Mumbai</h1>
+            <p>Mumbai, India's Vibrant Metropolis</p>
+            <a href="#introduction" class="btn btn-light mt-4">Explore</a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://media.istockphoto.com/id/860528756/photo/the-bandraworli-sea-link-mumbai-india.jpg?s=612x612&w=0&k=20&c=xT9TK7oYkP6TP62lHqP0H-9mfz9cWva4OcYEnt06cjc="
+                        class="img-fluid" alt="Gateway of India">
+                </div>
+                <div class="col-md-6">
+                    <h2>Introduction</h2>
+                    <p>Mumbai, formerly known as Bombay, is the capital city of the Indian state of Maharashtra. It's not
+                        just a city, it's an experience. Known as the "City of Dreams", Mumbai is a bustling metropolis, a
+                        melting pot of cultures, and India's financial, commercial, and entertainment hub.</p>
+                    <a href="#info-section" class="btn btn-primary">Explore Mumbai</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="info-section" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <!-- Transportation Section -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body" style="background-image: url('https://i.pinimg.com/236x/f8/58/d7/f858d7d9797afb3b34503aa5ff83cb9f.jpg'); background-size: cover; background-position: center; color: rgb(0, 0, 0); padding: 40px; border-radius: 10px; min-height: 300px;">
+                            <h5 class="card-title">Transportation</h5>
+                            <p class="card-text">Mumbai has an extensive transportation network, including suburban
+                                trains, metro, buses, and a robust taxi system. The Chhatrapati Shivaji International
+                                Airport connects the city to the world.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tourism Section -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body" style="background-image: url('https://i.pinimg.com/474x/47/1e/4a/471e4a49fa508c222fecb265a5dc7eda.jpg'); background-size: cover; background-position: center; color: rgb(0, 0, 0); padding: 40px; border-radius: 10px; min-height: 300px;">
+                            <h5 class="card-title">Tourism</h5>
+                            <p class="card-text">Mumbai attracts tourists with its historic landmarks, cultural festivals,
+                                and the allure of Bollywood. The city offers a mix of modern luxury hotels and budget
+                                accommodations.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Economy and Business Section -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body" style="background-image: url('https://i.pinimg.com/236x/07/2a/75/072a7572e15756258b34ded1dc085872.jpg'); background-size: cover; background-position: center; color: rgb(0, 0, 0); padding: 40px; border-radius: 10px; min-height: 300px;">
+                            <h5 class="card-title">Economy and Business</h5>
+                            <p class="card-text">Mumbai's economy is diverse, with a strong presence in finance,
+                                entertainment, information technology, and more. It's a global business hub with numerous
+                                multinational corporations headquartered here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Explore Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Explore the Heart of Mumbai</h2>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <img src="https://i.pinimg.com/564x/22/b1/0b/22b10bcb3bd0c2dc4bbc0e51ae6b19e4.jpg" alt="Explore Mumbai" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://i.pinimg.com/736x/20/7b/cb/207bcb6d78c23cf96c8a28fe079554e3.jpg" alt="Explore Mumbai" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://i.pinimg.com/564x/3c/ee/eb/3ceeeb58b3d19125e735a680f54ebe07.jpg" alt="Explore Mumbai" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://i.pinimg.com/564x/b4/43/6a/b4436a1f29dee530ce9c4b64d66df68e.jpg" alt="Explore Mumbai" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://i.pinimg.com/564x/37/c1/97/37c197b8b0ad05d12cb526ae7e3b31cf.jpg" alt="Explore Mumbai" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://i.pinimg.com/564x/a0/fc/29/a0fc298ed3a29d7e7a0d455cf722d811.jpg" alt="Explore Mumbai" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <secstion id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="section-title text-center">Contact Us</h2>
+            <div class="row justify-content-center">
+
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white py-3">
+        <p class="mb-0">© 2023 Welcome to Mumbai. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
