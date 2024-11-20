@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Mumbai</title>
+    <link rel="stylesheet" href="mumbaistyles.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#">Welcome to Mumbai</a>
+        <button class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar-links" id="navbar-links">
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#info-section">Explore</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>The Mumbai</h1>
+            <p>Mumbai, India's Vibrant Metropolis</p>
+            <a href="#introduction" class="btn">Explore</a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <img src="https://media.istockphoto.com/id/860528756/photo/the-bandraworli-sea-link-mumbai-india.jpg?s=612x612&w=0&k=20&c=xT9TK7oYkP6TP62lHqP0H-9mfz9cWva4OcYEnt06cjc=" alt="Gateway of India">
+                </div>
+                <div class="column">
+                    <h2>Introduction</h2>
+                    <p>Mumbai, formerly known as Bombay, is the capital city of the Indian state of Maharashtra. It's not just a city, it's an experience. Known as the "City of Dreams", Mumbai is a bustling metropolis, a melting pot of cultures, and India's financial, commercial, and entertainment hub.</p>
+                    <a href="#info-section" class="btn">Explore Mumbai</a>
+                    <a href="#contact" class="btn secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Info Section -->
+    <section id="info-section" class="section info-section">
+        <div class="container">
+            <div class="row">
+                <!-- Transportation Section -->
+                <div class="column">
+                    <div class="card" style="background-image: url('https://i.pinimg.com/236x/f8/58/d7/f858d7d9797afb3b34503aa5ff83cb9f.jpg');">
+                        <div class="overlay">
+                            <h5>Transportation</h5>
+                            <p>Mumbai has an extensive transportation network, including suburban trains, metro, buses, and a robust taxi system. The Chhatrapati Shivaji International Airport connects the city to the world.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tourism Section -->
+                <div class="column">
+                    <div class="card" style="background-image: url('https://i.pinimg.com/474x/47/1e/4a/471e4a49fa508c222fecb265a5dc7eda.jpg');">
+                        <div class="overlay">
+                            <h5>Tourism</h5>
+                            <p>Mumbai attracts tourists with its historic landmarks, cultural festivals, and the allure of Bollywood. The city offers a mix of modern luxury hotels and budget accommodations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Economy and Business Section -->
+                <div class="column">
+                    <div class="card" style="background-image: url('https://i.pinimg.com/236x/07/2a/75/072a7572e15756258b34ded1dc085872.jpg');">
+                        <div class="overlay">
+                            <h5>Economy and Business</h5>
+                            <p>Mumbai's economy is diverse, with a strong presence in finance, entertainment, information technology, and more. It's a global business hub with numerous multinational corporations headquartered here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section class="section explore-section">
+        <div class="container">
+            <h2 class="section-title">Explore the Heart of Mumbai</h2>
+            <div class="row">
+                <div class="column">
+                    <img src="https://i.pinimg.com/564x/22/b1/0b/22b10bcb3bd0c2dc4bbc0e51ae6b19e4.jpg" alt="Explore Mumbai">
+                </div>
+                <div class="column">
+                    <img src="https://i.pinimg.com/736x/20/7b/cb/207bcb6d78c23cf96c8a28fe079554e3.jpg" alt="Explore Mumbai">
+                </div>
+                <div class="column">
+                    <img src="https://i.pinimg.com/564x/3c/ee/eb/3ceeeb58b3d19125e735a680f54ebe07.jpg" alt="Explore Mumbai">
+                </div>
+                <div class="column">
+                    <img src="https://i.pinimg.com/564x/b4/43/6a/b4436a1f29dee530ce9c4b64d66df68e.jpg" alt="Explore Mumbai">
+                </div>
+                <div class="column">
+                    <img src="https://i.pinimg.com/564x/37/c1/97/37c197b8b0ad05d12cb526ae7e3b31cf.jpg" alt="Explore Mumbai">
+                </div>
+                <div class="column">
+                    <img src="https://i.pinimg.com/564x/a0/fc/29/a0fc298ed3a29d7e7a0d455cf722d811.jpg" alt="Explore Mumbai">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <form action="submit_contact_form.php" method="POST">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 Welcome to Mumbai. All Rights Reserved.</p>
+    </footer>
+<script>
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+    const navbarLinks = document.getElementById("navbar-links");
+    navbarLinks.classList.toggle("active");
+});
+</script>
+</body>
+
+</html>

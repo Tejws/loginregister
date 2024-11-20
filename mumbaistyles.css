@@ -1,0 +1,291 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* Navigation Links */
+.navbar .navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar .navbar-links a:hover {
+    text-decoration: underline;
+}
+
+/* Menu Toggle (Hamburger Icon) */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+    .navbar .navbar-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar .navbar-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navbar .navbar-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://i.redd.it/b99en84uvy951.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.hero .btn {
+    background-color: #ff5733;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #e03e00;
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Card Images */
+.card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #333;
+}
+
+.card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+}
+
+.card h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+/* Image Responsiveness */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.column img {
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Explore Section */
+.explore-section .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Contact Form */
+.contact-section .input-group {
+    margin-bottom: 20px;
+}
+
+.contact-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-section input, .contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #e03e00;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .navbar-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .column {
+        flex: 1 1 100%;
+    }
+
+    .card {
+        height: 200px;
+    }
+}
